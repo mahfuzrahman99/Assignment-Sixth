@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeVista Explorer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com" ></script>
+  </head>
+  <body>
+    <header>
+      <section class="container mx-auto">
+        <div class="navbar bg-base-100 mt-12">
+          <div class="navbar-start ">
+            <img src="Logo.png" alt="" />
+          </div>
+          <div class="navbar-center">
+            <button class="btn bg-gray-300" id="sort-btn">SORT BY ASCENDING ORDER</button>
+          </div>
+          <div class="navbar-end">
+            <a class="btn bg-red-600" id="blog-btn">Blog</a>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="container mx-auto">
+      <section>
+        <div id="btn-container" class="flex justify-center items-center flex-col md:flex-row lg:flex-row  gap-2 mt-16"></div>
+      </section>
+      <section>
+        <div
+          id="card-container"
+          class="grid grid-cols-1 md:grid-cols-3  lg:grid-cols-4 gap-1 md:gap-2 lg:gap-3 my-6"
+        ></div>
+      </section>
+      <section>
+        <div id="drow-container">
+          
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
